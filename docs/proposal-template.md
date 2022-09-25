@@ -13,8 +13,9 @@ A 2D, grid based, strategy, and dating sim. This game will use a grid based move
 
 # Anticipated Technologies
 
-Devices to support coding with Godot in C#.
-Internet conenction to work together using Github.
+* Godot
+* Github
+* C#
 
 # Method/Approach
 

@@ -9,7 +9,7 @@ Team members:
 
 # Introduction
 
-A 2D, grid based, strategy, and dating sim. This game will use a grid based movement system for battles, use dice rolls for attacking, and be a 2D system. 
+A 2D, grid based, strategy, and dating sim. This game will use a grid based movement system for battles, use dice rolls for attacking, and be in 2D animation. 
 
 # Anticipated Technologies
 

@@ -1,18 +1,24 @@
 Team name:
+Team 27
 
 Team members:
+* Cody Delano
+* Seth Wolfgang
+* Isabella Snyder
+
 
 # Introduction
 
-(In 2-4 paragraphs, describe your project concept)
+A 2D, grid based, strategy, and dating sim. This game will use a grid based movement system for battles, use dice rolls for attacking, and be a 2D system. 
 
 # Anticipated Technologies
 
-(What technologies are needed to build this project)
+Devices to support coding with Godot in C#.
+Internet conenction to work together using Github.
 
 # Method/Approach
 
-(What is your estimated "plan of attack" for developing this project)
+Agile
 
 # Estimated Timeline
 

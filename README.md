@@ -6,7 +6,7 @@ Project description (~1 paragraph)
 
 * [Isabella Snyder](https://github.com/ALostGuardian/CIS350-HW2-Snyder) (Role 1, Role 2)
 * Seth Wolfgang (Role 3, Role 4)
-* Cody DeLano (Role 5, Role 6)
+* [Cody DeLano] (https://github.com/Seno900/CIS350-HW2-DeLano) (Role 5, Role 6)
 
 ## Prerequisites
 

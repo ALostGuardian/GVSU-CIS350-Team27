@@ -4,23 +4,28 @@ Hold a team meeting at least once a week in some format.  Copy the following tem
 
 ## Meeting minutes template
 
-Team name:
+Team name:Team 27
 
-Members present:
+Members present:Seth Wolfgang, Cody Delano, Isabella Snyder
 
-Date:
+Date:9/27/2022
 
-Time:
+Time:Hour
 
 Discussion points: 
 
-*
-*
-*
+*Time tables
+*Where do we wanna start
+*Local Multiplayer vs AI
+*Tackling Grid system first
 
 Goals for next week (include responsibilities)
 
-*
-*
-*
-
+*Meet again
+*rough draft of grid system
+*download godot
+*rough ideas for characters and setting
+*Characters designed, responsible (bell)
+*Map design (bell)
+*Grid system(all)
+*character class(all)

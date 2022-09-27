@@ -8,24 +8,18 @@ Team name:Team 27
 
 Members present:Seth Wolfgang, Cody Delano, Isabella Snyder
 
-Date:9/27/2022
+Date:
 
-Time:Hour
+Time:
 
 Discussion points: 
 
-*Time tables
-*Where do we wanna start
-*Local Multiplayer vs AI
-*Tackling Grid system first
+*
+*
+*
 
 Goals for next week (include responsibilities)
 
-*Meet again
-*rough draft of grid system
-*download godot
-*rough ideas for characters and setting
-*Characters designed, responsible (bell)
-*Map design (bell)
-*Grid system(all)
-*character class(all)
+*
+*
+*

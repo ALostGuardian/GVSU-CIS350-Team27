@@ -4,7 +4,7 @@
    - The unit shall have multiple attributes that determine combat stats.
 2. Save System
    - The player shall be allowed to save their progress, in terms of map progression, unit attributes, and character relationships, at any non-battle time.
-   - The playershall be allowed to have multiple saves at a time.
+   - The player shall be allowed to have multiple saves at a time.
    - The save system shall be easy to use.
 3. Inventory System
    - The player shall be allowed to access an inventory system, which shall allow them to equip and unequip items from various units.
@@ -26,4 +26,4 @@
    - The magic system shall be easy to understand.
 7. Player Control
    - The player shall not be allowed to move enemy units as they would their normal units.
-   - The player shall be able
+   - The player shall be able to use menus to navigate between different game screens, such as the map, settings, or inventory management.

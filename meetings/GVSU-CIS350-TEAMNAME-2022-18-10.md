@@ -11,11 +11,11 @@ Date:10/18/2022
 Time:1 Hour
 
 Discussion points:
-*Presentation
-*Slide show editing
-*Overal Project Discussion
+* Presentation
+* Slide show editing
+* Overal Project Discussion
 
 Goals for next week (include responsibilities)
-*Burn down chart(Cody)
-*Finish up presentation(all)
-*Mentally prepare
+* Burn down chart(Cody)
+* Finish up presentation(all)
+* Mentally prepare

@@ -83,22 +83,22 @@ Responsible: Isabella Snyder
 
 Item storage and equipment for allies/enemies
 
-Time: ???
+Time: 2 weeks
 
-Responsible: ???
+Responsible: Cody
 
 -**Save System**
 
 Method to save current progress.
 
-Time: ???
+Time: 1 week, dependent on development of characters and inventory
 
-Responsible: Cody?
+Responsible: Cody
 
 -**Menu System**
 
 Menu progression to the various states the game needs to be in
 
-Time: ???
+Time: 1 week
 
-Responsible: Cody?
+Responsible: Cody

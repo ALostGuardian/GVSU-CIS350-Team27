@@ -51,9 +51,9 @@ Responsible: Seth Wolfgang
 
 Have relationship creating and affecting mechanics
 
-Time: ???
+Time: 
 
-Responsible: ???
+Responsible: Cody
 
 -**Cutscene System**
 

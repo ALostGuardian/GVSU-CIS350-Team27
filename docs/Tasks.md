@@ -67,17 +67,17 @@ Responsible: Isabella
 
 Ally and enemy combat interactions.
 
-Time: ???
+Time: 2 Weeks
 
-Responsible: ???
+Responsible: Isabella Snyder
 
 -**First map combat**
 
 Have enemies placed and balanced for first map
 
-Time: ???
+Time: 1 Week
 
-Responsible: ???
+Responsible: Isabella Snyder
 
 -**Inventory System**
 

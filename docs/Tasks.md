@@ -51,7 +51,7 @@ Responsible: Seth Wolfgang
 
 Have relationship creating and affecting mechanics
 
-Time: 
+Time: 1 week
 
 Responsible: Cody
 

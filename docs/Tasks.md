@@ -2,7 +2,7 @@
 
 A grid of entities moves on
 
-1 week
+time: 1 week
 
 Responsible: Seth Wolfgang
 

@@ -59,9 +59,9 @@ Responsible: ???
 
 Have cutscene mechanics and dialogue.
 
-Time: ???
+Time: 1 Week
 
-Responsible: ???
+Responsible: Isabella
 
 -**Combat System**
 

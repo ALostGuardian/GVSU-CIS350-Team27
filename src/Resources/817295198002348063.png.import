@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Solaria Demo Update 01 32.png-b3ae06920a4f09572f965d68cf4092bc.stex"
+path="res://.import/817295198002348063.png-7734d94e1c07c7d84d5e275224a5f38b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/Resources/Solaria Demo Update 01 32.png"
-dest_files=[ "res://.import/Solaria Demo Update 01 32.png-b3ae06920a4f09572f965d68cf4092bc.stex" ]
+source_file="res://src/Resources/817295198002348063.png"
+dest_files=[ "res://.import/817295198002348063.png-7734d94e1c07c7d84d5e275224a5f38b.stex" ]
 
 [params]
 

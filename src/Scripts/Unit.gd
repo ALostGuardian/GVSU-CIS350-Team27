@@ -4,7 +4,7 @@ extends Path2D
 
 signal walk_finished
 
-export var grid: Resource = preload("res://Grid.tres")
+export var grid: Resource = preload("res://src/Resources/Grid.tres")
 export var skin: Texture setget set_skin
 export var move_range := 6
 export var skin_offset := Vector2.ZERO setget set_skin_offset
@@ -23,13 +23,12 @@ onready var _path_follow: PathFollow2D = $PathFollow2D
 func _ready() -> void:
 	set_process(false)
 	
-
 	self.cell = grid.calculate_grid_coordinates(position)
 	position = grid.calculate_map_position(cell)
 
 	if not Engine.editor_hint:
 		curve = Curve2D.new()
-
+		
 
 func _process(delta: float) -> void:
 	_path_follow.offset += move_speed * delta

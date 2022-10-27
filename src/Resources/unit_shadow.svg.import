@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/unit_shadow.svg-868cdc4cb203e913eed0116a53c839eb.stex"
+path="res://.import/unit_shadow.svg-fcf64af302ddd03ba019fc9c42a1eccc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://unit_shadow.svg"
-dest_files=[ "res://.import/unit_shadow.svg-868cdc4cb203e913eed0116a53c839eb.stex" ]
+source_file="res://src/Resources/unit_shadow.svg"
+dest_files=[ "res://.import/unit_shadow.svg-fcf64af302ddd03ba019fc9c42a1eccc.stex" ]
 
 [params]
 

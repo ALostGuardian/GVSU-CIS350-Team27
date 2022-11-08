@@ -1,0 +1,78 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "Cursor",
+"language": "GDScript",
+"path": "res://Scripts/cursor.gd"
+}, {
+"base": "Node2D",
+"class": "GameBoard",
+"language": "GDScript",
+"path": "res://Scripts/gameBoard.gd"
+}, {
+"base": "Resource",
+"class": "Grid",
+"language": "GDScript",
+"path": "res://Scripts/Grid.gd"
+}, {
+"base": "Reference",
+"class": "PathFinder",
+"language": "GDScript",
+"path": "res://Scripts/PathFinder.gd"
+}, {
+"base": "Path2D",
+"class": "Unit",
+"language": "GDScript",
+"path": "res://Scripts/Unit.gd"
+}, {
+"base": "TileMap",
+"class": "UnitOverlay",
+"language": "GDScript",
+"path": "res://Scripts/unitOverlay.gd"
+}, {
+"base": "TileMap",
+"class": "UnitPath",
+"language": "GDScript",
+"path": "res://Scripts/unitPath.gd"
+} ]
+_global_script_class_icons={
+"Cursor": "",
+"GameBoard": "",
+"Grid": "",
+"PathFinder": "",
+"Unit": "",
+"UnitOverlay": "",
+"UnitPath": ""
+}
+
+[application]
+
+config/name="TestProject"
+config/icon="res://icon.png"
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[mono]
+
+project/assembly_name="TestProject"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false

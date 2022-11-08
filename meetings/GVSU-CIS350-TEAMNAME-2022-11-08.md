@@ -11,11 +11,11 @@ Date:11/8/2022
 Time:1 Hour
 
 Discussion points:
-*combat
-*menus
-*save system
+* combat
+* menus
+* save system
 
 Goals for next week (include responsibilities)
 * continue working on combat(Isabella\
-*continue working on menus(COdy)
+* continue working on menus(COdy)
 

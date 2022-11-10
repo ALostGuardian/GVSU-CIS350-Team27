@@ -128,10 +128,32 @@ func _on_Cursor_accept_pressed(cell: Vector2) -> void:
 	if not _active_unit:
 		_select_unit(cell)
 	elif _active_unit.is_selected:
-		_move_active_unit(cell)
+		_move_active_unit(find_closest_walkable_cell(cell))
 
 
 ## Updates the interactive path's drawing if there's an active and selected unit.
 func _on_Cursor_moved(new_cell: Vector2) -> void:
 	if _active_unit and _active_unit.is_selected:
-		_unit_path.draw(_active_unit.cell, new_cell)
+		# We process the new cell by calling `find_closest_walkable_cell()`
+		var target_cell = find_closest_walkable_cell(new_cell)
+		_unit_path.draw(_active_unit.cell, target_cell)
+
+##find closest unoccupied cell
+func find_closest_walkable_cell(cell: Vector2) -> Vector2:
+	if not _units.has(cell):
+		return cell
+
+	var closest_cell := cell
+	var min_distance := INF
+
+	for direction in DIRECTIONS:
+		var target: Vector2 = cell + direction
+		if _units.has(target) and not _units[target] == _active_unit:
+			continue
+
+		var distance := target.distance_squared_to(_active_unit.cell)
+		if distance < min_distance:
+			min_distance = distance
+			closest_cell = target
+
+	return closest_cell

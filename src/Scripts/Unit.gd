@@ -2,7 +2,8 @@ tool
 class_name Unit
 extends Path2D
 
-signal walk_finished
+signal walk_finished()
+signal moving(cell)
 
 export var grid: Resource = preload("res://src/Resources/Grid.tres")
 export var skin: Texture setget set_skin
@@ -51,7 +52,6 @@ func walk_along(path: PoolVector2Array) -> void:
 	cell = path[-1]
 	self._is_walking = true
 
-
 func set_cell(value: Vector2) -> void:
 	cell = grid.clamp(value)
 
@@ -79,5 +79,6 @@ func set_skin_offset(value: Vector2) -> void:
 
 
 func _set_is_walking(value: bool) -> void:
+	emit_signal("moving", cell)
 	_is_walking = value
 	set_process(_is_walking)

@@ -708,8 +708,13 @@ grid = ExtResource( 8 )
 
 [node name="Unit" parent="GameBoard" instance=ExtResource( 3 )]
 position = Vector2( 60, 60 )
+move_range = 10
+
+[node name="Unit2" parent="GameBoard" instance=ExtResource( 3 )]
+position = Vector2( 448, 128 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 520, 296 )
 current = true
 process_mode = 0
 script = ExtResource( 2 )

@@ -33,7 +33,7 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	_path_follow.offset += move_speed * delta
-
+	print(self._is_walking)
 	if _path_follow.unit_offset >= 1.0:
 		self._is_walking = false
 		_path_follow.offset = 0.0

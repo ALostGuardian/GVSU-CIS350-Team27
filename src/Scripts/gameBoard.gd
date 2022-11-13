@@ -75,8 +75,8 @@ func _flood_fill(cell: Vector2, max_distance: int) -> Array:
 		array.append(current)
 		for direction in DIRECTIONS:
 			var coordinates: Vector2 = current + direction
-			if is_occupied(coordinates):
-				continue
+			#if is_occupied(coordinates):
+			#	continue
 			if coordinates in array:
 				continue
 
@@ -87,14 +87,29 @@ func _flood_fill(cell: Vector2, max_distance: int) -> Array:
 ## Updates the _units dictionary with the target position for the unit and asks the _active_unit to walk to it.
 func _move_active_unit(new_cell: Vector2) -> void:
 	if is_occupied(new_cell) or not new_cell in _walkable_cells:
-		return
+		if new_cell != _active_unit.cell:
+			_attack(new_cell)
+			_clear_active_unit()
+			return
+		else:
+			return
 	# warning-ignore:return_value_discarded
-	_units.erase(_active_unit.cell)
-	_units[new_cell] = _active_unit
-	_deselect_active_unit()
-	_active_unit.walk_along(_unit_path.current_path)
-	yield(_active_unit, "walk_finished")
-	_clear_active_unit()
+	if new_cell in _walkable_cells:
+		_units.erase(_active_unit.cell)
+		_units[new_cell] = _active_unit
+		_deselect_active_unit()
+		_active_unit.walk_along(_unit_path.current_path)
+		yield(_active_unit, "walk_finished")
+		_clear_active_unit()
+	_reinitialize()
+
+
+func _attack(cell: Vector2) -> void:
+	var unitToRemove = _units[cell]
+	print(unitToRemove)
+	_units.erase(unitToRemove.cell)
+	if remove_child(unitToRemove):
+		queue_free()
 
 
 ## Selects the unit in the `cell` if there's one there.
@@ -119,6 +134,7 @@ func _deselect_active_unit() -> void:
 
 ## Clears the reference to the _active_unit and the corresponding walkable cells.
 func _clear_active_unit() -> void:
+	_deselect_active_unit()
 	_active_unit = null
 	_walkable_cells.clear()
 
@@ -128,7 +144,8 @@ func _on_Cursor_accept_pressed(cell: Vector2) -> void:
 	if not _active_unit:
 		_select_unit(cell)
 	elif _active_unit.is_selected:
-		_move_active_unit(find_closest_walkable_cell(cell))
+		_move_active_unit(cell)
+	# for friendly units -> _move_active_unit(find_closest_walkable_cell(cell))
 
 
 ## Updates the interactive path's drawing if there's an active and selected unit.

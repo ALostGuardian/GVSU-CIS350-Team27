@@ -11,6 +11,10 @@ export var move_range := 6
 export var skin_offset := Vector2.ZERO setget set_skin_offset
 export var move_speed := 600.0
 
+
+#combat variables
+var health = 2
+
 var cell := Vector2.ZERO setget set_cell
 var is_selected := false setget set_is_selected
 
@@ -82,3 +86,7 @@ func _set_is_walking(value: bool) -> void:
 	emit_signal("moving", cell)
 	_is_walking = value
 	set_process(_is_walking)
+	
+func _attack_unit(unit: Unit) -> void:
+	health-=1
+	print(health)

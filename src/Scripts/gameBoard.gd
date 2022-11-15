@@ -8,6 +8,9 @@ const DIRECTIONS = [Vector2.LEFT, Vector2.RIGHT, Vector2.UP, Vector2.DOWN]
 
 ## Resource of type Grid.
 export var grid: Resource
+var unit: Unit = load("res://src/Scripts/Unit.gd").new()
+
+
 
 ## Mapping of coordinates of a cell to a reference to the unit it contains.
 var _units := {}
@@ -107,9 +110,13 @@ func _move_active_unit(new_cell: Vector2) -> void:
 func _attack(cell: Vector2) -> void:
 	var unitToRemove = _units[cell]
 	print(unitToRemove)
-	_units.erase(unitToRemove.cell)
-	if remove_child(unitToRemove):
-		queue_free()
+	unit._attack_unit(_units[cell])
+	if unit.health >0:
+		pass
+	else:
+		_units.erase(unitToRemove.cell)
+		if remove_child(unitToRemove):
+			queue_free()
 
 
 ## Selects the unit in the `cell` if there's one there.

@@ -1,0 +1,73 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/Resources/village.jpg" type="Texture" id=1]
+[ext_resource path="res://src/Scenes/outOfBattleMenu.gd" type="Script" id=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="sidePanel" type="Panel" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 1.0
+margin_top = -190.0
+margin_right = 203.0
+margin_bottom = 222.0
+
+[node name="savesButton" type="Button" parent="sidePanel"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = 58.0
+margin_right = 153.0
+margin_bottom = 108.0
+text = "Saves"
+
+[node name="quitButton" type="Button" parent="sidePanel"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = 133.0
+margin_right = 153.0
+margin_bottom = 183.0
+text = "Quit"
+
+[node name="inventoryButton" type="Button" parent="sidePanel"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 1.0
+margin_top = -18.0
+margin_right = 154.0
+margin_bottom = 32.0
+text = "Inventory"
+
+[node name="relationshipButton" type="Button" parent="sidePanel"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = -2.0
+margin_top = -92.0
+margin_right = 154.0
+margin_bottom = -42.0
+text = "Relationships"
+
+[node name="battleButton" type="Button" parent="sidePanel"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = -2.0
+margin_top = -162.0
+margin_right = 158.0
+margin_bottom = -112.0
+text = "Battle!"
+
+[connection signal="button_up" from="sidePanel/savesButton" to="." method="_on_savesButton_button_up"]
+[connection signal="button_up" from="sidePanel/quitButton" to="." method="_on_quitButton_button_up"]
+[connection signal="button_up" from="sidePanel/inventoryButton" to="." method="_on_inventoryButton_button_up"]
+[connection signal="button_up" from="sidePanel/relationshipButton" to="." method="_on_relationshipButton_button_up"]
+[connection signal="button_up" from="sidePanel/battleButton" to="." method="_on_battleButton_button_up"]

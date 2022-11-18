@@ -5,11 +5,12 @@ class_name GameBoard
 extends Node2D
 
 const DIRECTIONS = [Vector2.LEFT, Vector2.RIGHT, Vector2.UP, Vector2.DOWN]
+var rng = RandomNumberGenerator.new()
 
 ## Resource of type Grid.
 export var grid: Resource
 var unit: Unit = load("res://src/Scripts/Unit.gd").new()
-
+var newUnit = preload("res://src/Scenes/Unit.tscn")
 
 
 ## Mapping of coordinates of a cell to a reference to the unit it contains.
@@ -89,15 +90,15 @@ func _flood_fill(cell: Vector2, max_distance: int) -> Array:
 
 ## Updates the _units dictionary with the target position for the unit and asks the _active_unit to walk to it.
 func _move_active_unit(new_cell: Vector2) -> void:
-	if is_occupied(new_cell) or not new_cell in _walkable_cells:
-		if new_cell != _active_unit.cell:
-			_attack(new_cell)
-			_clear_active_unit()
-			return
-		else:
-			return
 	# warning-ignore:return_value_discarded
 	if new_cell in _walkable_cells:
+		if is_occupied(new_cell) or not new_cell in _walkable_cells:
+			if new_cell != _active_unit.cell:
+				_attack(new_cell)
+				_clear_active_unit()
+				return
+			else:
+				return
 		_units.erase(_active_unit.cell)
 		_units[new_cell] = _active_unit
 		_deselect_active_unit()
@@ -108,15 +109,23 @@ func _move_active_unit(new_cell: Vector2) -> void:
 
 
 func _attack(cell: Vector2) -> void:
-	var unitToRemove = _units[cell]
-	print(unitToRemove)
-	unit._attack_unit(_units[cell])
-	if unit.health >0:
-		pass
-	else:
-		_units.erase(unitToRemove.cell)
-		if remove_child(unitToRemove):
+	var unitToAttack = _units[cell]
+	print($unitToAttack)
+	unitToAttack._attack_unit($unitToAttack)
+	if unitToAttack.getHealth() <= 0:
+		_units.erase(unitToAttack.cell)
+		if remove_child(unitToAttack):
 			queue_free()
+		_spawnUnitRandom()
+
+
+func _spawnUnitRandom() -> void:
+	if _units.size() == 1:
+		print("Adding new unit")
+		add_child(newUnit.instance(), true)
+		_reinitialize()
+		
+		
 
 
 ## Selects the unit in the `cell` if there's one there.

@@ -1,9 +1,7 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://src/Resources/817295198002348063.png" type="Texture" id=1]
 [ext_resource path="res://src/Scripts/Unit.gd" type="Script" id=3]
-
-[sub_resource type="GDScript" id=5]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Idle"
@@ -182,7 +180,6 @@ loop = false
 [node name="Sprite" type="Sprite" parent="PathFollow2D"]
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 1 )
-script = SubResource( 5 )
 
 [node name="Shadow" type="Sprite" parent="PathFollow2D"]
 modulate = Color( 0.219608, 0.219608, 0.219608, 1 )

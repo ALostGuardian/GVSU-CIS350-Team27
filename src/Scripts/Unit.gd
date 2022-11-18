@@ -1,4 +1,4 @@
-tool
+
 class_name Unit
 extends Path2D
 
@@ -13,7 +13,8 @@ export var move_speed := 600.0
 
 
 #combat variables
-var health = 2
+export var health := 3
+var isRange: bool
 
 var cell := Vector2.ZERO setget set_cell
 var is_selected := false setget set_is_selected
@@ -27,17 +28,18 @@ onready var _path_follow: PathFollow2D = $PathFollow2D
 
 func _ready() -> void:
 	set_process(false)
-	
+	self.health = 3
+	print("Health: " + str(health))
 	self.cell = grid.calculate_grid_coordinates(position)
 	position = grid.calculate_map_position(cell)
 
 	if not Engine.editor_hint:
 		curve = Curve2D.new()
 		
-
+		
 func _process(delta: float) -> void:
 	_path_follow.offset += move_speed * delta
-	print(self._is_walking)
+
 	if _path_follow.unit_offset >= 1.0:
 		self._is_walking = false
 		_path_follow.offset = 0.0
@@ -89,4 +91,10 @@ func _set_is_walking(value: bool) -> void:
 	
 func _attack_unit(unit: Unit) -> void:
 	health-=1
-	print(health)
+	print("Object health: " + str(health))
+
+func getHealth() -> int:
+	return health
+
+func setHealth(health: int) -> void:
+	health = health

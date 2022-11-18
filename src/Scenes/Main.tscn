@@ -706,12 +706,12 @@ grid = ExtResource( 8 )
 
 [node name="Cursor" parent="GameBoard" instance=ExtResource( 4 )]
 
-[node name="Unit" parent="GameBoard" instance=ExtResource( 3 )]
-position = Vector2( 60, 60 )
-move_range = 10
-
 [node name="Unit2" parent="GameBoard" instance=ExtResource( 3 )]
-position = Vector2( 448, 128 )
+unique_name_in_owner = true
+position = Vector2( 608, 160 )
+
+[node name="Unit" parent="GameBoard" instance=ExtResource( 3 )]
+unique_name_in_owner = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 520, 296 )

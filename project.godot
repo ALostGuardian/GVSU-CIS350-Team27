@@ -63,7 +63,7 @@ _global_script_class_icons={
 [application]
 
 config/name="350 Game"
-run/main_scene="res://src/Scenes/Main.tscn"
+run/main_scene="res://src/Scenes/mainMenu.tscn"
 config/icon="res://icon.png"
 
 [editor]

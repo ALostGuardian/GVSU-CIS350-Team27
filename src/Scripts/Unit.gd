@@ -9,12 +9,13 @@ export var grid: Resource = preload("res://src/Resources/Grid.tres")
 export var skin: Texture setget set_skin
 export var move_range := 6
 export var skin_offset := Vector2.ZERO setget set_skin_offset
-export var move_speed := 600.0
+export var move_speed := 1000.0
 
 
 #combat variables
 export var health := 3
-var isRange: bool
+var isRanged: bool = true
+var attackPower = 1
 
 var cell := Vector2.ZERO setget set_cell
 var is_selected := false setget set_is_selected
@@ -28,8 +29,7 @@ onready var _path_follow: PathFollow2D = $PathFollow2D
 
 func _ready() -> void:
 	set_process(false)
-	self.health = 3
-	print("Health: " + str(health))
+	print("Position: " + str(self.cell))
 	self.cell = grid.calculate_grid_coordinates(position)
 	position = grid.calculate_map_position(cell)
 
@@ -45,8 +45,11 @@ func _process(delta: float) -> void:
 		_path_follow.offset = 0.0
 		position = grid.calculate_map_position(cell)
 		curve.clear_points()
+		print("Position: " + str(self.cell))
 		emit_signal("walk_finished")
 
+func getRangeStatus():
+	return false
 
 func walk_along(path: PoolVector2Array) -> void:
 	if path.empty():
@@ -60,7 +63,10 @@ func walk_along(path: PoolVector2Array) -> void:
 
 func set_cell(value: Vector2) -> void:
 	cell = grid.clamp(value)
+	position = grid.calculate_map_position(value)
 
+func get_cell() -> Vector2:
+	return cell
 
 func set_is_selected(value: bool) -> void:
 	is_selected = value
@@ -89,8 +95,8 @@ func _set_is_walking(value: bool) -> void:
 	_is_walking = value
 	set_process(_is_walking)
 	
-func _attack_unit(unit: Unit) -> void:
-	health-=1
+func _attack_unit(unit: Unit, attackPower: int) -> void:
+	health -= attackPower
 	print("Object health: " + str(health))
 
 func getHealth() -> int:

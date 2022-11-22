@@ -92,13 +92,8 @@ func _flood_fill(cell: Vector2, max_distance: int) -> Array:
 func _move_active_unit(new_cell: Vector2) -> void:
 	# warning-ignore:return_value_discarded
 	if new_cell in _walkable_cells:
-		if is_occupied(new_cell) or not new_cell in _walkable_cells:
-			if new_cell != _active_unit.cell:
-				_attack(new_cell)
-				_clear_active_unit()
-				return
-			else:
-				return
+		if _checkValidAttack(new_cell):
+			return
 		_units.erase(_active_unit.cell)
 		_units[new_cell] = _active_unit
 		_deselect_active_unit()
@@ -107,11 +102,41 @@ func _move_active_unit(new_cell: Vector2) -> void:
 		_clear_active_unit()
 	_reinitialize()
 
+func _checkValidAttack(new_cell: Vector2):
+	if is_occupied(new_cell): 
+		if _active_unit.getRangeStatus():
+			print(_active_unit.getRangeStatus())
+			if new_cell != _active_unit.cell:
+				print("Ranged")
+				_attack(new_cell)
+				_clear_active_unit()
+				return true
+			else:
+				return false
+		else: #Unit is Melee
+			if is_occupied(_active_unit.get_cell() + Vector2.RIGHT):
+				print("Right")
+				_attack(_active_unit.get_cell() + Vector2.RIGHT)
+				return true
+			elif is_occupied(_active_unit.get_cell() + Vector2.UP):
+				print("up")
+				_attack(_active_unit.get_cell() + Vector2.UP)
+				return true
+			elif is_occupied(_active_unit.get_cell() + Vector2.LEFT):
+				print("Let")
+				_attack(_active_unit.get_cell() + Vector2.LEFT)
+				return true
+			elif is_occupied(_active_unit.get_cell() + Vector2.DOWN):
+				print("Down")
+				_attack(_active_unit.get_cell() + Vector2.DOWN)
+				return true
+	return false
+	
 
 func _attack(cell: Vector2) -> void:
 	var unitToAttack = _units[cell]
 	print($unitToAttack)
-	unitToAttack._attack_unit($unitToAttack)
+	unitToAttack._attack_unit($unitToAttack, _active_unit.attackPower)
 	if unitToAttack.getHealth() <= 0:
 		_units.erase(unitToAttack.cell)
 		if remove_child(unitToAttack):
@@ -121,8 +146,10 @@ func _attack(cell: Vector2) -> void:
 
 func _spawnUnitRandom() -> void:
 	if _units.size() == 1:
-		print("Adding new unit")
+		var myUnit = newUnit.instance()
 		add_child(newUnit.instance(), true)
+		myUnit.set_cell(Vector2(rng.randf_range(0,10),rng.randf_range(0,10)))
+		print("Added new unit")
 		_reinitialize()
 		
 		

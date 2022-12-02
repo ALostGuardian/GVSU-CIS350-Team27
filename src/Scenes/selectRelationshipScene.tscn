@@ -1,0 +1,337 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/Scripts/selectRelationshipScene.gd" type="Script" id=1]
+[ext_resource path="res://src/Resources/leslie-saunders-UnnH4IhPTt4-unsplash.jpg" type="Texture" id=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+
+[node name="TabContainer" type="TabContainer" parent="."]
+anchor_left = 0.642
+anchor_top = 0.302
+anchor_right = 0.642
+anchor_bottom = 0.302
+margin_left = -366.408
+margin_top = -142.2
+margin_right = 365.592
+margin_bottom = 142.8
+
+[node name="Arcanlea" type="Button" parent="TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Arcanlea"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ArcanleaScene1" type="Button" parent="TabContainer/Arcanlea/VBoxContainer"]
+margin_right = 724.0
+margin_bottom = 80.0
+size_flags_vertical = 3
+text = "Scene 1"
+
+[node name="ArcanleaScene2" type="Button" parent="TabContainer/Arcanlea/VBoxContainer"]
+margin_top = 84.0
+margin_right = 724.0
+margin_bottom = 164.0
+size_flags_vertical = 3
+text = "Scene 2"
+
+[node name="ArcanleaScene3" type="Button" parent="TabContainer/Arcanlea/VBoxContainer"]
+margin_top = 168.0
+margin_right = 724.0
+margin_bottom = 249.0
+size_flags_vertical = 3
+text = "Scene 3"
+
+[node name="Velouria" type="Button" parent="TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Velouria"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VelouriaScene1" type="Button" parent="TabContainer/Velouria/VBoxContainer"]
+margin_right = 421.0
+margin_bottom = 72.0
+size_flags_vertical = 3
+text = "Scene 1"
+
+[node name="VelouriaScene2" type="Button" parent="TabContainer/Velouria/VBoxContainer"]
+margin_top = 76.0
+margin_right = 421.0
+margin_bottom = 148.0
+size_flags_vertical = 3
+text = "Scene 2"
+
+[node name="VelouriaScene3" type="Button" parent="TabContainer/Velouria/VBoxContainer"]
+margin_top = 152.0
+margin_right = 421.0
+margin_bottom = 224.0
+size_flags_vertical = 3
+text = "Scene 3"
+
+[node name="Faerieth" type="Button" parent="TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Faerieth"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="FaeriethScene1" type="Button" parent="TabContainer/Faerieth/VBoxContainer"]
+margin_right = 421.0
+margin_bottom = 72.0
+size_flags_vertical = 3
+text = "Scene 1"
+
+[node name="FaeriethScene2" type="Button" parent="TabContainer/Faerieth/VBoxContainer"]
+margin_top = 76.0
+margin_right = 421.0
+margin_bottom = 148.0
+size_flags_vertical = 3
+text = "Scene 2"
+
+[node name="FaeriethScene3" type="Button" parent="TabContainer/Faerieth/VBoxContainer"]
+margin_top = 152.0
+margin_right = 421.0
+margin_bottom = 224.0
+size_flags_vertical = 3
+text = "Scene 3"
+
+[node name="Incria" type="Button" parent="TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Incria"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="IncriaScene1" type="Button" parent="TabContainer/Incria/VBoxContainer"]
+margin_right = 421.0
+margin_bottom = 72.0
+size_flags_vertical = 3
+text = "Scene 1"
+
+[node name="IncriaScene2" type="Button" parent="TabContainer/Incria/VBoxContainer"]
+margin_top = 76.0
+margin_right = 421.0
+margin_bottom = 148.0
+size_flags_vertical = 3
+text = "Scene 2"
+
+[node name="IncriaScene3" type="Button" parent="TabContainer/Incria/VBoxContainer"]
+margin_top = 152.0
+margin_right = 421.0
+margin_bottom = 224.0
+size_flags_vertical = 3
+text = "Scene 3"
+
+[node name="Petros" type="Button" parent="TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Petros"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="PetrosScene1" type="Button" parent="TabContainer/Petros/VBoxContainer"]
+margin_right = 421.0
+margin_bottom = 72.0
+size_flags_vertical = 3
+text = "Scene 1"
+
+[node name="PetrosScene2" type="Button" parent="TabContainer/Petros/VBoxContainer"]
+margin_top = 76.0
+margin_right = 421.0
+margin_bottom = 148.0
+size_flags_vertical = 3
+text = "Scene 2"
+
+[node name="PetrosScene3" type="Button" parent="TabContainer/Petros/VBoxContainer"]
+margin_top = 152.0
+margin_right = 421.0
+margin_bottom = 224.0
+size_flags_vertical = 3
+text = "Scene 3"
+
+[node name="Kingsley" type="Button" parent="TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Kingsley"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="KingsleyScene1" type="Button" parent="TabContainer/Kingsley/VBoxContainer"]
+margin_right = 421.0
+margin_bottom = 72.0
+size_flags_vertical = 3
+text = "Scene 1"
+
+[node name="KingsleyScene2" type="Button" parent="TabContainer/Kingsley/VBoxContainer"]
+margin_top = 76.0
+margin_right = 421.0
+margin_bottom = 148.0
+size_flags_vertical = 3
+text = "Scene 2"
+
+[node name="KingsleyScene3" type="Button" parent="TabContainer/Kingsley/VBoxContainer"]
+margin_top = 152.0
+margin_right = 421.0
+margin_bottom = 224.0
+size_flags_vertical = 3
+text = "Scene 3"
+
+[node name="Odrahn" type="Button" parent="TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Odrahn"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="OdrahnScene1" type="Button" parent="TabContainer/Odrahn/VBoxContainer"]
+margin_right = 421.0
+margin_bottom = 72.0
+size_flags_vertical = 3
+text = "Scene 1"
+
+[node name="OdrahnScene2" type="Button" parent="TabContainer/Odrahn/VBoxContainer"]
+margin_top = 76.0
+margin_right = 421.0
+margin_bottom = 148.0
+size_flags_vertical = 3
+text = "Scene 2"
+
+[node name="OdrahnScene3" type="Button" parent="TabContainer/Odrahn/VBoxContainer"]
+margin_top = 152.0
+margin_right = 421.0
+margin_bottom = 224.0
+size_flags_vertical = 3
+text = "Scene 3"
+
+[node name="Button8" type="Button" parent="TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Button8"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Scene 1" type="Button" parent="TabContainer/Button8/VBoxContainer"]
+margin_right = 421.0
+margin_bottom = 72.0
+size_flags_vertical = 3
+text = "Scene 1"
+
+[node name="Scene 2" type="Button" parent="TabContainer/Button8/VBoxContainer"]
+margin_top = 76.0
+margin_right = 421.0
+margin_bottom = 148.0
+size_flags_vertical = 3
+text = "Scene 2"
+
+[node name="Scene 3" type="Button" parent="TabContainer/Button8/VBoxContainer"]
+margin_top = 152.0
+margin_right = 421.0
+margin_bottom = 224.0
+size_flags_vertical = 3
+text = "Scene 3"
+
+[node name="exitButton" type="Button" parent="."]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = 150.0
+margin_right = 200.0
+margin_bottom = 210.0
+text = "Exit"
+
+[node name="mainMenuButton" type="Button" parent="."]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -150.0
+margin_right = 200.0
+margin_bottom = -90.0
+text = "Main Menu"
+
+[node name="oobButton" type="Button" parent="."]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 3.0
+margin_right = 203.0
+margin_bottom = 60.0
+text = "Out of Battle Menu"
+
+[connection signal="button_up" from="TabContainer/Arcanlea/VBoxContainer/ArcanleaScene1" to="." method="_on_ArcanleaScene1_button_up"]
+[connection signal="button_up" from="TabContainer/Arcanlea/VBoxContainer/ArcanleaScene2" to="." method="_on_ArcanleaScene2_button_up"]
+[connection signal="button_up" from="TabContainer/Arcanlea/VBoxContainer/ArcanleaScene3" to="." method="_on_ArcanleaScene3_button_up"]
+[connection signal="button_up" from="TabContainer/Velouria/VBoxContainer/VelouriaScene1" to="." method="_on_VelouriaScene1_button_up"]
+[connection signal="button_up" from="TabContainer/Velouria/VBoxContainer/VelouriaScene2" to="." method="_on_VelouriaScene2_button_up"]
+[connection signal="button_up" from="TabContainer/Velouria/VBoxContainer/VelouriaScene3" to="." method="_on_VelouriaScene3_button_up"]
+[connection signal="button_up" from="TabContainer/Faerieth/VBoxContainer/FaeriethScene1" to="." method="_on_FaeriethScene1_button_up"]
+[connection signal="button_up" from="TabContainer/Faerieth/VBoxContainer/FaeriethScene2" to="." method="_on_FaeriethScene2_button_up"]
+[connection signal="button_up" from="TabContainer/Faerieth/VBoxContainer/FaeriethScene3" to="." method="_on_FaeriethScene3_button_up"]
+[connection signal="button_up" from="TabContainer/Incria/VBoxContainer/IncriaScene1" to="." method="_on_IncriaScene1_button_up"]
+[connection signal="button_up" from="TabContainer/Incria/VBoxContainer/IncriaScene2" to="." method="_on_IncriaScene2_button_up"]
+[connection signal="button_up" from="TabContainer/Incria/VBoxContainer/IncriaScene3" to="." method="_on_IncriaScene3_button_up"]
+[connection signal="button_up" from="TabContainer/Petros/VBoxContainer/PetrosScene1" to="." method="_on_PetrosScene1_button_up"]
+[connection signal="button_up" from="TabContainer/Petros/VBoxContainer/PetrosScene2" to="." method="_on_PetrosScene2_button_up"]
+[connection signal="button_up" from="TabContainer/Petros/VBoxContainer/PetrosScene3" to="." method="_on_PetrosScene3_button_up"]
+[connection signal="button_up" from="TabContainer/Kingsley/VBoxContainer/KingsleyScene1" to="." method="_on_KingsleyScene1_button_up"]
+[connection signal="button_up" from="TabContainer/Kingsley/VBoxContainer/KingsleyScene2" to="." method="_on_KingsleyScene2_button_up"]
+[connection signal="button_up" from="TabContainer/Kingsley/VBoxContainer/KingsleyScene3" to="." method="_on_KingsleyScene3_button_up"]
+[connection signal="button_up" from="TabContainer/Odrahn/VBoxContainer/OdrahnScene1" to="." method="_on_OdrahnScene1_button_up"]
+[connection signal="button_up" from="TabContainer/Odrahn/VBoxContainer/OdrahnScene2" to="." method="_on_OdrahnScene2_button_up"]
+[connection signal="button_up" from="TabContainer/Odrahn/VBoxContainer/OdrahnScene3" to="." method="_on_OdrahnScene3_button_up"]
+[connection signal="button_up" from="exitButton" to="." method="_on_exitButton_button_up"]
+[connection signal="button_up" from="mainMenuButton" to="." method="_on_mainMenuButton_button_up"]
+[connection signal="button_up" from="oobButton" to="." method="_on_oobButton_button_up"]

@@ -32,10 +32,10 @@ func _on_inventoryButton_button_up():
 
 
 func _on_relationshipButton_button_up():
-	#TODO
+	get_tree().change_scene("res://src/Scenes/selectRelationshipScene.tscn")
 	pass # Replace with function body.
 
 
 func _on_battleButton_button_up():
-	get_tree().change_scene("res://src/Scenes/Main.tscn")
+	get_tree().change_scene("res://src/Scenes/BattleOne.tscn")
 	pass # Replace with function body.

@@ -9,7 +9,7 @@ export var grid: Resource = preload("res://src/Resources/Grid.tres")
 export var skin: Texture setget set_skin
 export var move_range := 6
 export var skin_offset := Vector2.ZERO setget set_skin_offset
-export var move_speed := 1000.0
+export var move_speed := 250.0
 
 
 #combat variables
@@ -25,6 +25,7 @@ var _is_walking := false setget _set_is_walking
 onready var _sprite: Sprite = $PathFollow2D/Sprite
 onready var _anim_player: AnimationPlayer = $AnimationPlayer
 onready var _path_follow: PathFollow2D = $PathFollow2D
+onready var _animated_sprite = $AnimatedSprite
 
 
 func _ready() -> void:
@@ -39,6 +40,8 @@ func _ready() -> void:
 		
 func _process(delta: float) -> void:
 	_path_follow.offset += move_speed * delta
+	get_node("PathFollow2D/AnimatedSprite").play("run")
+	
 
 	if _path_follow.unit_offset >= 1.0:
 		self._is_walking = false
@@ -47,6 +50,10 @@ func _process(delta: float) -> void:
 		curve.clear_points()
 		print("Position: " + str(self.cell))
 		emit_signal("walk_finished")
+		get_node("PathFollow2D/AnimatedSprite").stop()
+		
+		
+		
 
 func getRangeStatus():
 	return false
@@ -95,6 +102,8 @@ func _set_is_walking(value: bool) -> void:
 	_is_walking = value
 	set_process(_is_walking)
 	
+	
+	
 func _attack_unit(unit: Unit, attackPower: int) -> void:
 	health -= attackPower
 	print("Object health: " + str(health))
@@ -104,3 +113,4 @@ func getHealth() -> int:
 
 func setHealth(health: int) -> void:
 	health = health
+	

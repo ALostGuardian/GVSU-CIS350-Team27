@@ -21,6 +21,15 @@ func _physics_process(delta):
 				$TextBox/Tween.stop()
 				$TextBox/RichTextLabel.percent_visible = 1
 				finished = true
+		if $Button1.text == "":
+			$Button1.visible = false
+		else:
+			$Button1.visible = true
+			
+		if $Button2.text == "":
+			$Button2.visible = false
+		else:
+			$Button2.visible = true
 		
 
 func load_dialogue():
@@ -31,6 +40,8 @@ func load_dialogue():
 		$TextBox.visible = true
 		$TextBox/RichTextLabel.bbcode_text = text[dialogue_index]["Text"]
 		$TextBox/Label.text = text[dialogue_index]["Name"]
+		$Button1.text = text[dialogue_index]["Choices"][0]
+		$Button2.text = text[dialogue_index]["Choices"][1]
 		
 		position = text[dialogue_index]["Position"]
 		
@@ -41,7 +52,7 @@ func load_dialogue():
 		)
 		$TextBox/Tween.start()
 	else:
-		$textBox.visible = false
+		$TextBox.visible = false
 		active = false
 		finished = true
 	dialogue_index += 1
@@ -49,3 +60,21 @@ func load_dialogue():
 
 func _on_Tween_tween_completed(object, key):
 	finished = true
+
+
+func _on_Button1_pressed():
+	if $Button1.text == "Okay, Ill leave":
+		$Button1.text = ""
+		$Button2.text= ""
+		text = get_parent().get_node("Dialogue").after_choice_1
+		dialogue_index = 0
+		load_dialogue()
+
+
+func _on_Button2_pressed():
+	if $Button2.text == "What if I walk looking for YOU?":
+		$Button1.text = ""
+		$Button2.text= ""
+		text = get_parent().get_node("Dialogue").after_choice_2
+		dialogue_index = 0
+		load_dialogue()

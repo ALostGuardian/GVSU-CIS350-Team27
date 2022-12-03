@@ -74,4 +74,26 @@ text = "Name"
 align = 1
 valign = 1
 
+[node name="Button1" type="Button" parent="Control"]
+anchor_left = -0.913
+anchor_top = 2.322
+anchor_right = -0.913
+anchor_bottom = 2.322
+margin_left = 385.52
+margin_top = -5.88
+margin_right = 714.52
+margin_bottom = 72.12
+theme = ExtResource( 1 )
+text = "Choice 1"
+
+[node name="Button2" type="Button" parent="Control"]
+margin_left = 348.0
+margin_top = 193.0
+margin_right = 685.0
+margin_bottom = 272.0
+theme = ExtResource( 1 )
+text = "Choice 2"
+
 [connection signal="tween_completed" from="Control/TextBox/Tween" to="Control" method="_on_Tween_tween_completed"]
+[connection signal="pressed" from="Control/Button1" to="Control" method="_on_Button1_pressed"]
+[connection signal="pressed" from="Control/Button2" to="Control" method="_on_Button2_pressed"]

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Ashtonwalk1.png-d70a450c247162be5c151e3340263aec.stex"
+path="res://.import/Ashtonwalk1.png-ce321ae2aa8f5f3096ce6ec77ed8dfc5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/Resources/Ashtonwalk1.png"
-dest_files=[ "res://.import/Ashtonwalk1.png-d70a450c247162be5c151e3340263aec.stex" ]
+source_file="res://Ashtonwalk1.png"
+dest_files=[ "res://.import/Ashtonwalk1.png-ce321ae2aa8f5f3096ce6ec77ed8dfc5.stex" ]
 
 [params]
 

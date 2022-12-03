@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Odrahnwalk1.png-7810ef1a4a57e7b4349bfbb3b93ce910.stex"
+path="res://.import/Odrahnwalk1.png-21b1c6ac3edf8f945559b9daff6ff81f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/Resources/Odrahnwalk1.png"
-dest_files=[ "res://.import/Odrahnwalk1.png-7810ef1a4a57e7b4349bfbb3b93ce910.stex" ]
+source_file="res://Odrahnwalk1.png"
+dest_files=[ "res://.import/Odrahnwalk1.png-21b1c6ac3edf8f945559b9daff6ff81f.stex" ]
 
 [params]
 

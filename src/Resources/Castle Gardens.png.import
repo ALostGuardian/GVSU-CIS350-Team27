@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Castle Gardens.png-6ee1497cf5a7f190e7664cbac38b8766.stex"
+path="res://.import/Castle Gardens.png-06de8b867f06443a4abfc8104e7c69f8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://VisualNovelImages/Backgrounds/Castle Gardens.png"
-dest_files=[ "res://.import/Castle Gardens.png-6ee1497cf5a7f190e7664cbac38b8766.stex" ]
+source_file="res://src/Resources/Castle Gardens.png"
+dest_files=[ "res://.import/Castle Gardens.png-06de8b867f06443a4abfc8104e7c69f8.stex" ]
 
 [params]
 

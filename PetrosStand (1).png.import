@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PetrosStand (1).png-ef7c14d3492951bef35a96dbc9b8a961.stex"
+path="res://.import/PetrosStand (1).png-b0d81a940d6ca456bb5b30c44636eaac.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/Resources/PetrosStand (1).png"
-dest_files=[ "res://.import/PetrosStand (1).png-ef7c14d3492951bef35a96dbc9b8a961.stex" ]
+source_file="res://PetrosStand (1).png"
+dest_files=[ "res://.import/PetrosStand (1).png-b0d81a940d6ca456bb5b30c44636eaac.stex" ]
 
 [params]
 

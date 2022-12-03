@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/KingsleyStand.png-c1013aba38139b190a81d14991c7fa05.stex"
+path="res://.import/KingsleyStand.png-5bb5652c7418376f7df5afb914815dc5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/Resources/KingsleyStand.png"
-dest_files=[ "res://.import/KingsleyStand.png-c1013aba38139b190a81d14991c7fa05.stex" ]
+source_file="res://KingsleyStand.png"
+dest_files=[ "res://.import/KingsleyStand.png-5bb5652c7418376f7df5afb914815dc5.stex" ]
 
 [params]
 

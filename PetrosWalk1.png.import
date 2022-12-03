@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PetrosWalk1.png-21fec59dbf77dfcc8a55fbc9da4066c6.stex"
+path="res://.import/PetrosWalk1.png-e14228ce5ff5a26355294a6a8618c2f9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/Resources/PetrosWalk1.png"
-dest_files=[ "res://.import/PetrosWalk1.png-21fec59dbf77dfcc8a55fbc9da4066c6.stex" ]
+source_file="res://PetrosWalk1.png"
+dest_files=[ "res://.import/PetrosWalk1.png-e14228ce5ff5a26355294a6a8618c2f9.stex" ]
 
 [params]
 

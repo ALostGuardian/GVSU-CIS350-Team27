@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Kingsleywalk1.png-092cf5e64776dfda6adea0ccf46363e9.stex"
+path="res://.import/Kingsleywalk1.png-b9421afe27dce7638fe7bc4daede8437.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/Resources/Kingsleywalk1.png"
-dest_files=[ "res://.import/Kingsleywalk1.png-092cf5e64776dfda6adea0ccf46363e9.stex" ]
+source_file="res://Kingsleywalk1.png"
+dest_files=[ "res://.import/Kingsleywalk1.png-b9421afe27dce7638fe7bc4daede8437.stex" ]
 
 [params]
 

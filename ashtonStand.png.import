@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ashtonStand.png-8ca1899cde7d79496877354eb75f96d8.stex"
+path="res://.import/ashtonStand.png-2a604ad9eecd4647d78c298364db88f8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/Resources/ashtonStand.png"
-dest_files=[ "res://.import/ashtonStand.png-8ca1899cde7d79496877354eb75f96d8.stex" ]
+source_file="res://ashtonStand.png"
+dest_files=[ "res://.import/ashtonStand.png-2a604ad9eecd4647d78c298364db88f8.stex" ]
 
 [params]
 

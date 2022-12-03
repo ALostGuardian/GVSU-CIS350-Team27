@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Castle Pathway.png-f208f88688d80c482f31d69fdbebb3f8.stex"
+path="res://.import/Castle Pathway.png-7cfb95feb2f0d2b4aeee145eb5539d37.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://VisualNovelImages/Backgrounds/Castle Pathway.png"
-dest_files=[ "res://.import/Castle Pathway.png-f208f88688d80c482f31d69fdbebb3f8.stex" ]
+source_file="res://src/Resources/Castle Pathway.png"
+dest_files=[ "res://.import/Castle Pathway.png-7cfb95feb2f0d2b4aeee145eb5539d37.stex" ]
 
 [params]
 

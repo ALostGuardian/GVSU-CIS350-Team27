@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Velouria (2).png-09c36ae07a6e3058455a1dcd45a97cde.stex"
+path="res://.import/leslie-saunders-UnnH4IhPTt4-unsplash.jpg-18018bd2d1389b874e03e9c55726bd2d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/Resources/Velouria (2).png"
-dest_files=[ "res://.import/Velouria (2).png-09c36ae07a6e3058455a1dcd45a97cde.stex" ]
+source_file="res://src/Resources/leslie-saunders-UnnH4IhPTt4-unsplash.jpg"
+dest_files=[ "res://.import/leslie-saunders-UnnH4IhPTt4-unsplash.jpg-18018bd2d1389b874e03e9c55726bd2d.stex" ]
 
 [params]
 

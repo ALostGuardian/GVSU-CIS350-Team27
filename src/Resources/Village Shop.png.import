@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Village Shop.png-64515efab44e9d6ced348b4eed5a34f7.stex"
+path="res://.import/Village Shop.png-9a8e193d664f1c83af0463518522de1c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://VisualNovelImages/Backgrounds/Village Shop.png"
-dest_files=[ "res://.import/Village Shop.png-64515efab44e9d6ced348b4eed5a34f7.stex" ]
+source_file="res://src/Resources/Village Shop.png"
+dest_files=[ "res://.import/Village Shop.png-9a8e193d664f1c83af0463518522de1c.stex" ]
 
 [params]
 

@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://src/Resources/Ashronwalk2.png" type="Texture" id=1]
-[ext_resource path="res://src/Resources/Ashtonwalk1.png" type="Texture" id=2]
-[ext_resource path="res://src/Resources/ashtonStand.png" type="Texture" id=3]
+[ext_resource path="res://Ashronwalk2.png" type="Texture" id=1]
+[ext_resource path="res://Ashtonwalk1.png" type="Texture" id=2]
+[ext_resource path="res://ashtonStand.png" type="Texture" id=3]
 [ext_resource path="res://src/Scripts/GoblinUnit.gd" type="Script" id=4]
 
 [sub_resource type="SpriteFrames" id=1]

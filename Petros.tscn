@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://src/Scripts/RangedUnit.gd" type="Script" id=1]
-[ext_resource path="res://src/Resources/PetrosStand (1).png" type="Texture" id=2]
-[ext_resource path="res://src/Resources/PetrosWalk1.png" type="Texture" id=3]
-[ext_resource path="res://src/Resources/PetrosWalk2.png" type="Texture" id=4]
+[ext_resource path="res://PetrosStand (1).png" type="Texture" id=2]
+[ext_resource path="res://PetrosWalk1.png" type="Texture" id=3]
+[ext_resource path="res://PetrosWalk2.png" type="Texture" id=4]
 
 [sub_resource type="Curve2D" id=1]
 _data = {

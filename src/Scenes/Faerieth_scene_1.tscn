@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://src/Scripts/Fae_dialogue_1.gd" type="Script" id=1]
+[ext_resource path="res://src/Resources/Castle Gardens.png" type="Texture" id=2]
+[ext_resource path="res://src/Resources/FAe.png" type="Texture" id=3]
+[ext_resource path="res://src/Scenes/Arcaniea_Scene_1.tscn" type="PackedScene" id=4]
+
+[node name="Arcaniea Scene 1" instance=ExtResource( 4 )]
+
+[node name="Clearing4" parent="." index="0"]
+texture = ExtResource( 2 )
+
+[node name="Dialogue" parent="." index="5"]
+script = ExtResource( 1 )
+
+[node name="Arcaniea" parent="Control" index="0"]
+position = Vector2( 219, 266 )
+scale = Vector2( 0.956086, 1.23154 )
+texture = ExtResource( 3 )

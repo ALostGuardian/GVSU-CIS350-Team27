@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://src/Resources/theme.tres" type="Theme" id=1]
 [ext_resource path="res://src/Resources/Clearing 4.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://src/Resources/IMG-7737 (2).png" type="Texture" id=4]
 [ext_resource path="res://src/Scripts/Control.gd" type="Script" id=5]
 [ext_resource path="res://src/Scripts/Arcaniea_dialogue_1.gd" type="Script" id=6]
+[ext_resource path="res://Acoustic Band - LOOP - Monday Office - Live.wav" type="AudioStream" id=7]
 
 [node name="Arcaniea Scene 1" type="Node2D"]
 
@@ -93,6 +94,11 @@ margin_right = 685.0
 margin_bottom = 272.0
 theme = ExtResource( 1 )
 text = "Choice 2"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 7 )
+volume_db = -19.36
+autoplay = true
 
 [connection signal="tween_completed" from="Control/TextBox/Tween" to="Control" method="_on_Tween_tween_completed"]
 [connection signal="pressed" from="Control/Button1" to="Control" method="_on_Button1_pressed"]

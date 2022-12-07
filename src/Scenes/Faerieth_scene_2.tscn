@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://src/Scenes/Faerieth_scene_1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Resources/Castle Throne Room 1.png" type="Texture" id=2]
 [ext_resource path="res://src/Scripts/Fae_dialogue_2.gd" type="Script" id=3]
+[ext_resource path="res://src/Scenes/Tranquil - LOOP - Forest Town Live - STEM Main Parts.wav" type="AudioStream" id=4]
 
 [node name="Arcaniea Scene 1" instance=ExtResource( 1 )]
 
@@ -11,3 +12,6 @@ texture = ExtResource( 2 )
 
 [node name="Dialogue" parent="." index="5"]
 script = ExtResource( 3 )
+
+[node name="AudioStreamPlayer2D" parent="." index="7"]
+stream = ExtResource( 4 )

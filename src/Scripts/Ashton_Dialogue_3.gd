@@ -1,0 +1,73 @@
+extends Node2D
+
+
+var dialouge_1=[
+
+	{"Name": "Ashton",
+	"Position": "2",
+	"Text": "MC please answer me",
+	"Choices": ["",""],
+	},
+	{
+	"Name": "MC",
+	"Position": "1",
+	"Text": "Huh, does anybody else keep hearing this annoying noise?",
+	"Choices": ["",""],
+	},
+	{"Name": "Ashton",
+	"Position": "2",
+	"Text": "I didn't want to fight you that's what I was implying",
+	"Choices": ["",""],
+	},
+	{
+	"Name": "MC",
+	"Position": "1",
+	"Text": "Yeah because you hate me",
+	"Choices": ["",""],
+	},
+		{"Name": "Ashton",
+	"Position": "2",
+	"Text": "UGh! No thats not the reason!",
+	"Choices": ["",""],
+	},
+	{
+	"Name": "MC",
+	"Position": "1",
+	"Text": "Okay then if you don't hate me then please enlighten me with the real reason why you were such a jerk face!",
+	"Choices": ["",""],
+	},
+		{"Name": "Ashton",
+	"Position": "2",
+	"Text": "BECAUSE  YOU MAKE ME TOO NERVOUS TO FIGHT!",
+	"Choices": ["",""],
+	},
+	{
+	"Name": "MC",
+	"Position": "1",
+	"Text": "Huh?",
+	"Choices": ["",""],
+	},
+	{"Name": "Ashton",
+	"Position": "2",
+	"Text": "YOU’RE VERY PRETTY AND NICE TO ME AND THAT MAKES ME NERVOUS OKAY?!",
+	"Choices": ["",""],
+	},
+	{
+	"Name": "MC",
+	"Position": "1",
+	"Text": "Huuuuuh?",
+	"Choices": ["",""],
+	},
+	{"Name": "Ashton",
+	"Position": "2",
+	"Text": "Bye",
+	"Choices": ["",""],
+	},
+	{
+	"Name": "MC",
+	"Position": "1",
+	"Text": "HUUUUUH? Ashton get back here!",
+	"Choices": ["",""],
+	},
+	
+	]

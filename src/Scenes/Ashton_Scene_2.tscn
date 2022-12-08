@@ -1,8 +1,9 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Ashton_Scene_1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/Scenes/Ashton_Scene_1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Resources/Castle 1.png" type="Texture" id=2]
 [ext_resource path="res://src/Scripts/Ashton_Dialogue_2.gd" type="Script" id=3]
+
 
 [node name="Arcaniea_Scene_2" instance=ExtResource( 1 )]
 

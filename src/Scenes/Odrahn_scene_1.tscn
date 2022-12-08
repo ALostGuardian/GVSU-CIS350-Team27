@@ -10,7 +10,7 @@
 [node name="Clearing4" parent="." index="0"]
 texture = ExtResource( 4 )
 
-[node name="Dialogue" parent="." index="5"]
+[node name="Dialogue" parent="." index="1"]
 script = ExtResource( 2 )
 
 [node name="Arcaniea" parent="Control" index="0"]

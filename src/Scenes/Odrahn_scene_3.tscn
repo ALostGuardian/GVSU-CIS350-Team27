@@ -2,7 +2,7 @@
 
 [ext_resource path="res://src/Scenes/Odrahn_scene_2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/Scripts/Odrahn_dialogue_3.gd" type="Script" id=2]
-[ext_resource path="res://Cottage 4.png" type="Texture" id=4]
+[ext_resource path="res://src/Resources/Cottage 4.png" type="Texture" id=4]
 
 
 [node name="Arcaniea_Scene_2" instance=ExtResource( 1 )]

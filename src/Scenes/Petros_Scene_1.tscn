@@ -6,14 +6,13 @@
 [ext_resource path="res://src/Scripts/petros_dialogue_1.gd" type="Script" id=4]
 [ext_resource path="res://src/Resources/Sneaky - LOOP - Up To No Good.wav" type="AudioStream" id=5]
 
-
 [node name="Arcaniea Scene 1" instance=ExtResource( 1 )]
 
 [node name="Clearing4" parent="." index="0"]
 position = Vector2( 557, 38 )
 texture = ExtResource( 3 )
 
-[node name="Dialogue" parent="." index="5"]
+[node name="Dialogue" parent="." index="1"]
 script = ExtResource( 4 )
 
 [node name="Arcaniea" parent="Control" index="0"]
@@ -21,5 +20,5 @@ position = Vector2( 223, 219 )
 scale = Vector2( 0.972511, 1.2078 )
 texture = ExtResource( 2 )
 
-[node name="AudioStreamPlayer2D" parent="." index="7"]
+[node name="AudioStreamPlayer2D" parent="." index="3"]
 stream = ExtResource( 5 )

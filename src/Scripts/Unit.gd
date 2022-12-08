@@ -7,7 +7,7 @@ signal moving(cell)
 
 export var grid: Resource = preload("res://src/Resources/Grid.tres")
 export var move_range := 6
-export var move_speed := 250.0
+export var move_speed := 350.0
 
 
 #combat variables
@@ -39,7 +39,6 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	_path_follow.offset += move_speed * delta
 	get_node("PathFollow2D/AnimatedSprite").play("run")
-	
 
 	if _path_follow.unit_offset >= 1.0:
 		self._is_walking = false
@@ -50,8 +49,7 @@ func _process(delta: float) -> void:
 		emit_signal("walk_finished")
 		get_node("PathFollow2D/AnimatedSprite").stop()
 		
-		
-		
+
 
 func getRangeStatus():
 	return false
@@ -65,13 +63,16 @@ func walk_along(path: PoolVector2Array) -> void:
 		curve.add_point(grid.calculate_map_position(point) - position)
 	cell = path[-1]
 	self._is_walking = true
+	
 
 func set_cell(value: Vector2) -> void:
 	cell = grid.clamp(value)
 	position = grid.calculate_map_position(value)
+	
 
 func get_cell() -> Vector2:
 	return cell
+
 
 func set_is_selected(value: bool) -> void:
 	is_selected = value
@@ -88,9 +89,11 @@ func _attack_unit(unit: Unit, attackPower: int) -> void:
 	health -= attackPower
 	print("Object health: " + str(health))
 
+
 func getHealth() -> int:
 	return health
 
+# Syntactically it doesn't look like it should work, but it does
 func setHealth(health: int) -> void:
 	health = health
 	

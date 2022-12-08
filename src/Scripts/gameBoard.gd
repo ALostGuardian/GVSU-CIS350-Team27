@@ -10,7 +10,7 @@ var rng = RandomNumberGenerator.new()
 ## Resource of type Grid.
 export var grid: Resource
 var unit: Unit = load("res://src/Scripts/Unit.gd").new()
-var newUnit = preload("res://src/Scenes/Unit.tscn")
+var newUnit = preload("res://src/Scenes/EnemyOne.tscn")
 
 
 ## Mapping of coordinates of a cell to a reference to the unit it contains.
@@ -45,8 +45,8 @@ func is_occupied(cell: Vector2) -> bool:
 
 
 ## Returns an array of cells a given unit can walk using the flood fill algorithm.
-func get_walkable_cells(unit: Unit) -> Array:
-	return _flood_fill(unit.cell, unit.move_range)
+func get_walkable_cells(myUnit: Unit) -> Array:
+	return _flood_fill(myUnit.cell, myUnit.move_range)
 
 
 ## Clears, and refills the `_units` dictionary with game objects that are on the board.
@@ -91,7 +91,7 @@ func _flood_fill(cell: Vector2, max_distance: int) -> Array:
 ## Updates the _units dictionary with the target position for the unit and asks the _active_unit to walk to it.
 func _move_active_unit(new_cell: Vector2) -> void:
 	# warning-ignore:return_value_discarded
-	if new_cell in _walkable_cells:
+	if new_cell in _walkable_cells and new_cell != _active_unit.get_cell():
 		if _checkValidAttack(new_cell):
 			return
 		_units.erase(_active_unit.cell)
@@ -145,10 +145,22 @@ func _attack(cell: Vector2) -> void:
 
 
 func _spawnUnitRandom() -> void:
-	if _units.size() == 1:
+	var counter = 0
+	for x in self.get_children():
+		if "Enemy" in x.name:
+			counter += 1
+	
+	if counter == 0:
 		var myUnit = newUnit.instance()
 		add_child(newUnit.instance(), true)
-		myUnit.set_cell(Vector2(rng.randf_range(0,10),rng.randf_range(0,10)))
+		
+		var newUnitCell = Vector2(rng.randi_range(0,500),rng.randi_range(0,500))
+		while(not is_occupied(newUnitCell)):
+					newUnitCell = Vector2(rng.randi_range(0,500),rng.randi_range(0,500))
+					grid.clamp(newUnitCell)
+					
+		print("New Cell: " + str(newUnitCell))
+		myUnit.cell = newUnitCell
 		print("Added new unit")
 		_reinitialize()
 		
@@ -197,6 +209,7 @@ func _on_Cursor_moved(new_cell: Vector2) -> void:
 		# We process the new cell by calling `find_closest_walkable_cell()`
 		var target_cell = find_closest_walkable_cell(new_cell)
 		_unit_path.draw(_active_unit.cell, target_cell)
+
 
 ##find closest unoccupied cell
 func find_closest_walkable_cell(cell: Vector2) -> Vector2:

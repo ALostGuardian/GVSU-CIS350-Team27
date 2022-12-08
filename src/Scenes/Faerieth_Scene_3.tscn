@@ -1,9 +1,10 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://src/Scenes/Faerieth_scene_1.tscn" type="PackedScene" id=1]
-[ext_resource path="res://src/Scenes/Water Lake 1.png" type="Texture" id=2]
+[ext_resource path="res://src/Resources/Water Lake 1.png" type="Texture" id=2]
 [ext_resource path="res://src/Scripts/Fae_dialogue_3.gd" type="Script" id=3]
-[ext_resource path="res://src/Scenes/Acoustic - LOOP - Settlers Camp - Live.wav" type="AudioStream" id=4]
+[ext_resource path="res://src/Resources/Acoustic - LOOP - Settlers Camp - Live.wav" type="AudioStream" id=4]
+
 
 [node name="Arcaniea Scene 1" instance=ExtResource( 1 )]
 

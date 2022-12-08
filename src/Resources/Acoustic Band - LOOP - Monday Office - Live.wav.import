@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Acoustic Band - LOOP - Monday Office - Live.wav-41bf1ae3387cdf4bd35600659f7b742b.sample"
+
+[deps]
+
+source_file="res://src/Resources/Acoustic Band - LOOP - Monday Office - Live.wav"
+dest_files=[ "res://.import/Acoustic Band - LOOP - Monday Office - Live.wav-41bf1ae3387cdf4bd35600659f7b742b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

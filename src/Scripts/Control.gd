@@ -61,7 +61,9 @@ func load_dialogue():
 func _on_Tween_tween_completed(object, key):
 	finished = true
 
-
+func _on_mainMenuButton_button_up():
+	get_tree().change_scene("res://src/Scenes/mainMenu.tscn")
+	pass 
 func _on_Button1_pressed():
 	if $Button1.text == "Okay, Ill leave":
 		$Button1.text = ""

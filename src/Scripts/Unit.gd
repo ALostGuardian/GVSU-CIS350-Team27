@@ -6,9 +6,7 @@ signal walk_finished()
 signal moving(cell)
 
 export var grid: Resource = preload("res://src/Resources/Grid.tres")
-export var skin: Texture setget set_skin
 export var move_range := 6
-export var skin_offset := Vector2.ZERO setget set_skin_offset
 export var move_speed := 250.0
 
 
@@ -78,21 +76,6 @@ func get_cell() -> Vector2:
 func set_is_selected(value: bool) -> void:
 	is_selected = value
 	
-
-
-func set_skin(value: Texture) -> void:
-	skin = value
-	if not _sprite:
-		yield(self, "ready")
-	_sprite.texture = value
-
-
-func set_skin_offset(value: Vector2) -> void:
-	skin_offset = value
-	if not _sprite:
-		yield(self, "ready")
-	_sprite.position = value
-
 
 func _set_is_walking(value: bool) -> void:
 	emit_signal("moving", cell)

@@ -2,7 +2,7 @@
 
 [ext_resource path="res://src/Resources/Solaria Demo Update 01 32.png" type="Texture" id=1]
 [ext_resource path="res://src/Scenes/Cursor.tscn" type="PackedScene" id=2]
-[ext_resource path="res://src/Scenes/MeleeUnit.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/Scenes/EnemyOne.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/Scenes/FaeriethUnit.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/Scenes/UnitOverlay.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/Scripts/MeleeUnit.gd" type="Script" id=6]
@@ -14,7 +14,7 @@
 [ext_resource path="res://src/Scenes/Velouria.tscn" type="PackedScene" id=12]
 [ext_resource path="res://src/Scenes/Petros.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/Scenes/Kingsley.tscn" type="PackedScene" id=14]
-[ext_resource path="res://Ashton.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/Scenes/Ashton.tscn" type="PackedScene" id=15]
 [ext_resource path="res://src/Scenes/Odrahn.tscn" type="PackedScene" id=16]
 
 [sub_resource type="TileSet" id=1]
@@ -259,9 +259,6 @@ grid = ExtResource( 10 )
 
 [node name="Cursor" parent="GameBoard" instance=ExtResource( 2 )]
 
-[node name="Enemy1" parent="GameBoard" instance=ExtResource( 3 )]
-position = Vector2( 852, 198 )
-
 [node name="Faerieth" parent="GameBoard" instance=ExtResource( 4 )]
 position = Vector2( 893, 799 )
 curve = null
@@ -287,8 +284,10 @@ position = Vector2( 688, 789 )
 
 [node name="Ashton" parent="GameBoard" instance=ExtResource( 15 )]
 position = Vector2( 736, 649 )
-curve = null
 script = ExtResource( 6 )
+
+[node name="Enemy1" parent="GameBoard" instance=ExtResource( 3 )]
+position = Vector2( 851, 204 )
 
 [connection signal="accept_pressed" from="GameBoard/Cursor" to="GameBoard" method="_on_Cursor_accept_pressed"]
 [connection signal="moved" from="GameBoard/Cursor" to="GameBoard" method="_on_Cursor_moved"]

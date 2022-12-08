@@ -10,5 +10,9 @@ We set out to create a tactical RPG with dating sim elements. Our implementation
 * [Cody DeLano](https://github.com/Seno900/CIS350-HW2-DeLano) (Role 5, Role 6)
 
 ## Prerequisites
+[Godot game engine](https://godotengine.org/) 
 
 ## Run Instructions
+* Clone the repo
+* [Import into Godot](https://godotengine.org/qa/53461/how-to-import-a-folder-containing-a-godot-project#:~:text=You%20need%20to%20navigate%20to%20that%20folder%20and%20select%20the,folder%20into%20your%20game%20folder.)
+* Run project with play button in the top right corner

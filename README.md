@@ -16,3 +16,7 @@ We set out to create a tactical RPG with dating sim elements. Our implementation
 * Clone the repo
 * [Import into Godot](https://godotengine.org/qa/53461/how-to-import-a-folder-containing-a-godot-project#:~:text=You%20need%20to%20navigate%20to%20that%20folder%20and%20select%20the,folder%20into%20your%20game%20folder.)
 * Run project with play button in the top right corner
+Or
+* Go to https://seno900.itch.io/final-emblem
+* Download the exe file
+* Run it

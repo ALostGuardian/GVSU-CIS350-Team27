@@ -34,39 +34,11 @@ margin_bottom = 300.0
 alignment = 1
 
 [node name="save1" type="Button" parent="Panel/VBoxContainer"]
-margin_top = 167.0
-margin_right = 448.0
-margin_bottom = 217.0
-rect_min_size = Vector2( 0, 50 )
-text = "Save 1"
-
-[node name="save2" type="Button" parent="Panel/VBoxContainer"]
-margin_top = 221.0
-margin_right = 448.0
-margin_bottom = 271.0
-rect_min_size = Vector2( 0, 50 )
-text = "Save 2"
-
-[node name="save3" type="Button" parent="Panel/VBoxContainer"]
 margin_top = 275.0
 margin_right = 448.0
 margin_bottom = 325.0
 rect_min_size = Vector2( 0, 50 )
-text = "Save 3"
-
-[node name="save4" type="Button" parent="Panel/VBoxContainer"]
-margin_top = 329.0
-margin_right = 448.0
-margin_bottom = 379.0
-rect_min_size = Vector2( 0, 50 )
-text = "Save 4"
-
-[node name="save5" type="Button" parent="Panel/VBoxContainer"]
-margin_top = 383.0
-margin_right = 448.0
-margin_bottom = 433.0
-rect_min_size = Vector2( 0, 50 )
-text = "Save 5"
+text = "Save 1"
 
 [node name="exitButton" type="Button" parent="."]
 anchor_left = 0.396
@@ -80,8 +52,4 @@ margin_bottom = -6.10352e-05
 text = "Quit"
 
 [connection signal="button_up" from="Panel/VBoxContainer/save1" to="." method="_on_save1_button_up"]
-[connection signal="button_up" from="Panel/VBoxContainer/save2" to="." method="_on_save2_button_up"]
-[connection signal="button_up" from="Panel/VBoxContainer/save3" to="." method="_on_save3_button_up"]
-[connection signal="button_up" from="Panel/VBoxContainer/save4" to="." method="_on_save4_button_up"]
-[connection signal="button_up" from="Panel/VBoxContainer/save5" to="." method="_on_save5_button_up"]
 [connection signal="button_up" from="exitButton" to="." method="_on_exitButton_button_up"]

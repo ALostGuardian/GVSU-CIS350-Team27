@@ -222,6 +222,7 @@ margin_top = 152.0
 margin_right = 421.0
 margin_bottom = 224.0
 size_flags_vertical = 3
+disabled = true
 text = "Scene 3"
 
 [node name="Odrahn" type="Button" parent="TabContainer"]

@@ -4,6 +4,7 @@
 class_name GameBoard
 extends Node2D
 
+
 const DIRECTIONS = [Vector2.LEFT, Vector2.RIGHT, Vector2.UP, Vector2.DOWN]
 var rng = RandomNumberGenerator.new()
 
@@ -230,3 +231,8 @@ func find_closest_walkable_cell(cell: Vector2) -> Vector2:
 			closest_cell = target
 
 	return closest_cell
+
+
+func _on_escapeButton_pressed():
+	get_tree().change_scene("res://src/Scenes/outOfBattleMenu.tscn")
+	pass # Replace with function body.

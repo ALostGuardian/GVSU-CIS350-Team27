@@ -6,9 +6,10 @@
 [ext_resource path="res://src/Resources/IMG-7737 (2).png" type="Texture" id=4]
 [ext_resource path="res://src/Scripts/Control.gd" type="Script" id=5]
 [ext_resource path="res://src/Scripts/Arcaniea_dialogue_1.gd" type="Script" id=6]
-[ext_resource path="res://Acoustic Band - LOOP - Monday Office - Live.wav" type="AudioStream" id=7]
+[ext_resource path="res://src/Resources/Acoustic Band - LOOP - Monday Office - Live.wav" type="AudioStream" id=7]
 
 [node name="Arcaniea Scene 1" type="Node2D"]
+position = Vector2( -8, -8 )
 
 [node name="Clearing4" type="Sprite" parent="."]
 position = Vector2( 536, 352 )
@@ -96,10 +97,19 @@ theme = ExtResource( 1 )
 text = "Choice 2"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( -7, 11 )
 stream = ExtResource( 7 )
 volume_db = -19.36
 autoplay = true
 
+[node name="mainMenuButton" type="Button" parent="."]
+margin_left = 823.0
+margin_top = 19.0
+margin_right = 1023.0
+margin_bottom = 79.0
+text = "Main Menu"
+
 [connection signal="tween_completed" from="Control/TextBox/Tween" to="Control" method="_on_Tween_tween_completed"]
 [connection signal="pressed" from="Control/Button1" to="Control" method="_on_Button1_pressed"]
 [connection signal="pressed" from="Control/Button2" to="Control" method="_on_Button2_pressed"]
+[connection signal="button_up" from="mainMenuButton" to="Control" method="_on_mainMenuButton_button_up"]

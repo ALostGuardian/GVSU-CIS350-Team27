@@ -37,7 +37,6 @@ List of functional and non functional requirements for our 350 project. Also hyp
 | FR24 | Cutscenes shall have a button to exit back to selection screen |
 | FR25 | All menus shall have an escape method |
 | FR28 | Menu shall be able to lead to the main battle scene |
-| FR29 | There shall be a movable camera on the battle map |
 ## Non-Functional Requirements
 ### Player Movement
 | ID | Requirement |

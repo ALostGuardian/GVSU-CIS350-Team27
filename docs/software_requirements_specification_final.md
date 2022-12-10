@@ -50,32 +50,32 @@ List of functional and non functional requirements for our 350 project. Also hyp
 ### Combat
 | ID | Requirement |
 | :-------------: | :----------: |
-| NFR1 |  Combat shall be simple  |
-| NFR2 | Combat shall be snappy (quick) |
-| NFR3 | Combat shall be interesting |
-| NFR4 | Combat shall have easy to understand menus |
-| NFR5 | Map shall be visually pleasing |
-| NFR6 | Strategy shall be encouraged by the map |
+| NFR7 |  Combat shall be simple  |
+| NFR8 | Combat shall be snappy (quick) |
+| NFR9 | Combat shall be interesting |
+| NFR10 | Combat shall have easy to understand menus |
+| NFR11 | Map shall be visually pleasing |
+| NFR12 | Strategy shall be encouraged by the map |
 ### Cutscenes/Menus
 | ID | Requirement |
 | :-------------: | :----------: |
-| NFR1 |  Cutscenes shall be cutesy  |
-| NFR2 | Cutscenes shall be reasonable in length |
-| NFR3 | Music shall be fitting for scene |
-| NFR4 | Background shall be fitting for setting |
-| NFR5 | Choices shall correspond to dialogue |
-| NFR6 | Menu shall be aesthetically pleasing |
-| NFR7 | Menu shall be simple |
-| NFR8 | Menu background shall be relevant to game theme |
-| NFR9 | Menu buttons shall be easy to navigate |
+| NFR13 |  Cutscenes shall be cutesy  |
+| NFR14 | Cutscenes shall be reasonable in length |
+| NFR15 | Music shall be fitting for scene |
+| NFR16 | Background shall be fitting for setting |
+| NFR17 | Choices shall correspond to dialogue |
+| NFR18 | Menu shall be aesthetically pleasing |
+| NFR19 | Menu shall be simple |
+| NFR20 | Menu background shall be relevant to game theme |
+| NFR21 | Menu buttons shall be easy to navigate |
 ### Characters
 | ID | Requirement |
 | :-------------: | :----------: |
-| NFR1 | Characters shall be✨cuuuute✨ |
-| NFR2 | Unique characters shall be distinct from other characters |
-| NFR3 | Unique characters shall have an interesting story |
-| NFR4 | Unique characters shall grow closer to the MC over the scenes |
-| NFR5 | Dialogue choices shall impact dialogue |
+| NFR22 | Characters shall be✨cuuuute✨ |
+| NFR23 | Unique characters shall be distinct from other characters |
+| NFR24 | Unique characters shall have an interesting story |
+| NFR25 | Unique characters shall grow closer to the MC over the scenes |
+| NFR26 | Dialogue choices shall impact dialogue |
 # Software Artifacts
 Hyperlinks to all developed artifacts earlier in the project. Includes all (excluding final requirements and README) from documents folder just in case this was needed.
 * https://github.com/ALostGuardian/GVSU-CIS350-Team27/blob/819ffadd932aed4b3cc0a6484643c33afd71a980/artifacts/use_case_diagrams/Commands.pdf

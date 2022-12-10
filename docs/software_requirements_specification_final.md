@@ -1,69 +1,93 @@
-Functional Requirements
-1. Combat
-   1. Unit shall move on the grid
-   2. Movement range shall change based on unit type
-   3. Units shall not be able to occupy the same tile
-   4. Unit shall be able to choose not to move
-   5. Melee combat shall only for adjacent squares
-   6. Ranged attacks shall be in movement range
-   7. Units shall have health
-   8. Units shall have attack stat
-   9. Melee units shall have higher attack power than ranged
-   10. Goblin unit shall have high attack and low health
-2. Cutscenes/Menus
-   1. There shall be 3 unique cutscenes for each character
-   2. Cutscenes shall have a button to access them when available
-   3. Cutscenes shall play music
-   4. Some Cutscenes shall have a button to select different dialogue choices
-   5. Cutscenes shall have a button to exit back to selection screen
-   6. All menus shall have an escape method
-   7. Menu shall be able to lead to the main battle scene
-   8. Menu Shall lead to cutscenes
-   9. There shall be a movable camera on the battle map.
-3. Characters
-   1. Characters shall have an idle sprite
-   2. Characters shall have a walking animation
-   3. Characters shall have unique battle stats
-   4. Unique characters shall have a unique sprite
-   5. Common characters shall have a generic sprite
-
-Nonfunctional Requirements
-1. Player movement
-   1. Movement shall be easy to use
-   2. Showing character movement shall be intuitive
-   3. Character shall be easy to locate
-   4. Movement path shall be easy to comprehend
-   5. Camera shall feel natural
-   6. Camera shall be intuitive to use
-2. Combat
-   1. Combat shall be simple 
-   2. Combat shall be snappy (quick)
-   3. Combat shall be interesting
-   4. Combat shall have easy to understand menus
-   5. Map shall be visually pleasing 
-   6. Strategy shall be encouraged by the map
-3. Cutscenes/menus
-   1. Cutscenes shall be cutesy 
-   2. Cutscenes shall be reasonable in length
-   3. Music shall be fitting for scene
-   4. Background shall be fitting for setting
-   5. Choices shall correspond to dialogue
-   6. Menu shall be aesthetically pleasing
-   7. Menu shall be simple
-   8. Menu background shall be relevant to game theme
-   9. Menu buttons shall be easy to navigate
-4. Characters
-   1. Characters shall be✨cuuuute✨
-   2. Unique characters shall be unique
-   3. Unique characters shall have an interesting story
-   4. Unique characters shall grow closer to the MC over the scenes
-   5. Dialogue choices shall impact dialogue
-
 Artifact Hyperlinks
 * https://github.com/ALostGuardian/GVSU-CIS350-Team27/blob/819ffadd932aed4b3cc0a6484643c33afd71a980/artifacts/use_case_diagrams/Commands.pdf
 * https://github.com/ALostGuardian/GVSU-CIS350-Team27/blob/819ffadd932aed4b3cc0a6484643c33afd71a980/artifacts/use_case_diagrams/Inventory%20System%20Equip%20Item%20Expanded%20Use-Case.md
 * https://github.com/ALostGuardian/GVSU-CIS350-Team27/blob/819ffadd932aed4b3cc0a6484643c33afd71a980/artifacts/use_case_diagrams/InventoryUseCase.pdf
 * https://github.com/ALostGuardian/GVSU-CIS350-Team27/blob/819ffadd932aed4b3cc0a6484643c33afd71a980/artifacts/use_case_diagrams/MapUseCase.png
 
+# Overview
+List of functional and non functional requirements for our 350 project.
+# Software Requirements
+3 different categories for both functional and nonfucntional requirements, each containing a minimum of 5 requirements.
+## Functional Requirements
+### Combat
+| ID | Requirement |
+| :-------------: | :----------: |
+| FR1 | Unit shall be able to move on the grid |
+| FR2 | Movement range shall change based on unit type |
+| FR3 | Units shall not be able to occupy the same tile |
+| FR4 | Unit shall be able to choose not to move |
+| FR5 | Units shall not be able to occupy the same tile |
+| FR6 | Ranged attacks shall be in movement range |
+| FR7 | Units shall have health |
+| FR8 | Units shall have attack stat |
+| FR9 | Melee units shall have higher attack power than ranged |
+| FR10 | Goblin unit shall have high attack and low health |
+| … | … |
+### Cutscene/Menus
+| ID | Requirement |
+| :-------------: | :----------: |
+| FR11 | There shall be 3 unique cutscenes for each character |
+| FR12 | Cutscenes shall have a button to access them when available |
+| FR14 | Cutscenes shall play music |
+| FR15 | Some Cutscenes shall have a button to select different dialogue choices |
+| FR16 | Cutscenes shall have a button to exit back to selection screen |
+| FR17 | All menus shall have an escape method |
+| FR18 | Menu shall be able to lead to the main battle scene |
+| FR19 | There shall be a movable camera on the battle map |
+| … | … |
+### Characters
+| ID | Requirement |
+| :-------------: | :----------: |
+| FR20 | Characters shall have an idle sprite |
+| FR21 | Cutscenes shall have a button to access them when available |
+| FR22 | Cutscenes shall play music |
+| FR23 | Some Cutscenes shall have a button to select different dialogue choices |
+| FR24 | Cutscenes shall have a button to exit back to selection screen |
+| FR25 | All menus shall have an escape method |
+| FR28 | Menu shall be able to lead to the main battle scene |
+| FR29 | There shall be a movable camera on the battle map |
+| … | … |
+## Non-Functional Requirements
+### Player Movement
+| ID | Requirement |
+| :-------------: | :----------: |
+| NFR1 | Movement shall be easy to use |
+| NFR2 | Showing character movement shall be intuitive |
+| NFR3 |  Character shall be easy to locate |
+| NFR4 | Movement path shall be easy to comprehend |
+| NFR5 | Camera shall feel natural |
+| NFR6 | Camera shall be intuitive to use |
+### Combat
+| ID | Requirement |
+| :-------------: | :----------: |
+| NFR1 |  Combat shall be simple  |
+| NFR2 | Combat shall be snappy (quick) |
+| NFR3 | Combat shall be interesting |
+| NFR4 | Combat shall have easy to understand menus |
+| NFR5 | Map shall be visually pleasing |
+| NFR6 | Strategy shall be encouraged by the map |
+### Cutscenes/Menus
+| ID | Requirement |
+| :-------------: | :----------: |
+| NFR1 |  Cutscenes shall be cutesy  |
+| NFR2 | Cutscenes shall be reasonable in length |
+| NFR3 | Music shall be fitting for scene |
+| NFR4 | Background shall be fitting for setting |
+| NFR5 | Choices shall correspond to dialogue |
+| NFR6 | Menu shall be aesthetically pleasing |
+| NFR7 | Menu shall be simple |
+| NFR8 | Menu background shall be relevant to game theme |
+| NFR9 | Menu buttons shall be easy to navigate |
+### Characters
+| ID | Requirement |
+| :-------------: | :----------: |
+| NFR1 | Characters shall be✨cuuuute✨ |
+| NFR2 | Unique characters shall be distinct from other characters |
+| NFR3 | Unique characters shall have an interesting story |
+| NFR4 | Unique characters shall grow closer to the MC over the scenes |
+| NFR5 | Dialogue choices shall impact dialogue |
+# Software Artifacts
+<Describe the purpose of this section>
+* [I am a link](to_some_file.pdf)
 
 

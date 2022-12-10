@@ -1,11 +1,5 @@
-Artifact Hyperlinks
-* https://github.com/ALostGuardian/GVSU-CIS350-Team27/blob/819ffadd932aed4b3cc0a6484643c33afd71a980/artifacts/use_case_diagrams/Commands.pdf
-* https://github.com/ALostGuardian/GVSU-CIS350-Team27/blob/819ffadd932aed4b3cc0a6484643c33afd71a980/artifacts/use_case_diagrams/Inventory%20System%20Equip%20Item%20Expanded%20Use-Case.md
-* https://github.com/ALostGuardian/GVSU-CIS350-Team27/blob/819ffadd932aed4b3cc0a6484643c33afd71a980/artifacts/use_case_diagrams/InventoryUseCase.pdf
-* https://github.com/ALostGuardian/GVSU-CIS350-Team27/blob/819ffadd932aed4b3cc0a6484643c33afd71a980/artifacts/use_case_diagrams/MapUseCase.png
-
 # Overview
-List of functional and non functional requirements for our 350 project.
+List of functional and non functional requirements for our 350 project. Also hyperlinks for artifacts of the project.
 # Software Requirements
 3 different categories for both functional and nonfucntional requirements, each containing a minimum of 5 requirements.
 ## Functional Requirements
@@ -87,7 +81,18 @@ List of functional and non functional requirements for our 350 project.
 | NFR4 | Unique characters shall grow closer to the MC over the scenes |
 | NFR5 | Dialogue choices shall impact dialogue |
 # Software Artifacts
-<Describe the purpose of this section>
-* [I am a link](to_some_file.pdf)
+Hyperlinks to all developed artifacts earlier in the project. Includes all (excluding final requirements and README) from documents folder just in case this was needed.
+* https://github.com/ALostGuardian/GVSU-CIS350-Team27/blob/819ffadd932aed4b3cc0a6484643c33afd71a980/artifacts/use_case_diagrams/Commands.pdf
+* https://github.com/ALostGuardian/GVSU-CIS350-Team27/blob/819ffadd932aed4b3cc0a6484643c33afd71a980/artifacts/use_case_diagrams/Inventory%20System%20Equip%20Item%20Expanded%20Use-Case.md
+* https://github.com/ALostGuardian/GVSU-CIS350-Team27/blob/819ffadd932aed4b3cc0a6484643c33afd71a980/artifacts/use_case_diagrams/InventoryUseCase.pdf
+* https://github.com/ALostGuardian/GVSU-CIS350-Team27/blob/819ffadd932aed4b3cc0a6484643c33afd71a980/artifacts/use_case_diagrams/MapUseCase.png
+Documents Folder
+* https://github.com/ALostGuardian/GVSU-CIS350-Team27/blob/a04cce0a397dd164ebaafaed1ceb87ff4331ca09/docs/350%20Presentation%20Final.pdf
+* https://github.com/ALostGuardian/GVSU-CIS350-Team27/blob/a04cce0a397dd164ebaafaed1ceb87ff4331ca09/docs/CIS%20350%20Presentation.pptx
+* https://github.com/ALostGuardian/GVSU-CIS350-Team27/blob/a04cce0a397dd164ebaafaed1ceb87ff4331ca09/docs/Planned,%20Completed%20and%20Planned%20Completed.pdf
+* https://github.com/ALostGuardian/GVSU-CIS350-Team27/blob/a04cce0a397dd164ebaafaed1ceb87ff4331ca09/docs/Tasks.md
+* https://github.com/ALostGuardian/GVSU-CIS350-Team27/blob/a04cce0a397dd164ebaafaed1ceb87ff4331ca09/docs/proposal-template.md
+* https://github.com/ALostGuardian/GVSU-CIS350-Team27/blob/a04cce0a397dd164ebaafaed1ceb87ff4331ca09/docs/software_requirements_specification.md
+
 
 

@@ -16,7 +16,6 @@ List of functional and non functional requirements for our 350 project. Also hyp
 | FR8 | Units shall have attack stat |
 | FR9 | Melee units shall have higher attack power than ranged |
 | FR10 | Goblin unit shall have high attack and low health |
-| … | … |
 ### Cutscene/Menus
 | ID | Requirement |
 | :-------------: | :----------: |
@@ -28,7 +27,6 @@ List of functional and non functional requirements for our 350 project. Also hyp
 | FR17 | All menus shall have an escape method |
 | FR18 | Menu shall be able to lead to the main battle scene |
 | FR19 | There shall be a movable camera on the battle map |
-| … | … |
 ### Characters
 | ID | Requirement |
 | :-------------: | :----------: |
@@ -40,7 +38,6 @@ List of functional and non functional requirements for our 350 project. Also hyp
 | FR25 | All menus shall have an escape method |
 | FR28 | Menu shall be able to lead to the main battle scene |
 | FR29 | There shall be a movable camera on the battle map |
-| … | … |
 ## Non-Functional Requirements
 ### Player Movement
 | ID | Requirement |

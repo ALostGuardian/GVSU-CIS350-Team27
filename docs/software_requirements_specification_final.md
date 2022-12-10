@@ -21,22 +21,22 @@ List of functional and non functional requirements for our 350 project. Also hyp
 | :-------------: | :----------: |
 | FR11 | There shall be 3 unique cutscenes for each character |
 | FR12 | Cutscenes shall have a button to access them when available |
-| FR14 | Cutscenes shall play music |
-| FR15 | Some Cutscenes shall have a button to select different dialogue choices |
-| FR16 | Cutscenes shall have a button to exit back to selection screen |
-| FR17 | All menus shall have an escape method |
-| FR18 | Menu shall be able to lead to the main battle scene |
-| FR19 | There shall be a movable camera on the battle map |
+| FR13 | Cutscenes shall play music |
+| FR14 | Some Cutscenes shall have a button to select different dialogue choices |
+| FR15 | Cutscenes shall have a button to exit back to selection screen |
+| FR16 | All menus shall have an escape method |
+| FR17 | Menu shall be able to lead to the main battle scene |
+| FR18 | There shall be a movable camera on the battle map |
 ### Characters
 | ID | Requirement |
 | :-------------: | :----------: |
-| FR20 | Characters shall have an idle sprite |
-| FR21 | Cutscenes shall have a button to access them when available |
-| FR22 | Cutscenes shall play music |
-| FR23 | Some Cutscenes shall have a button to select different dialogue choices |
-| FR24 | Cutscenes shall have a button to exit back to selection screen |
-| FR25 | All menus shall have an escape method |
-| FR28 | Menu shall be able to lead to the main battle scene |
+| FR19 | Characters shall have an idle sprite |
+| FR20 | Cutscenes shall have a button to access them when available |
+| FR21 | Cutscenes shall play music |
+| FR22 | Some Cutscenes shall have a button to select different dialogue choices |
+| FR23 | Cutscenes shall have a button to exit back to selection screen |
+| FR24 | All menus shall have an escape method |
+| FR25 | Menu shall be able to lead to the main battle scene |
 ## Non-Functional Requirements
 ### Player Movement
 | ID | Requirement |
